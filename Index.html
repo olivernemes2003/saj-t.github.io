@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari F1 vagy sport?</title>
+    <link rel="stylesheet" type="text/css" href="stílus.css">
+    <link rel="stylesheet" media="print" type="text/css" href="print.css">
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div id="tartalom">
+        
+        <header>
+            <a id="skip" href="#content">Ugrás a tartalomra</a>
+            <button onclick="Kontraszt()">Kontraszt</button>
+        <script>
+            function Kontraszt(){
+                var element = document.querySelectorAll('p');
+                for (let index = 0; index < element.length; index++) {
+                    element[index].classList.toggle("Kont");
+                }
+            }
+        </script>
+            <nav>
+                <ul class="ul2">
+                    <li><img src="Ferrari-F1-Logo-1.png" alt="Ferrari logot láthatunk"></li>
+                </ul>
+                <ul class="ul1">
+                    <li><a class="active" href="index.html">Ferrari F1 vagy sport?</a></li> 
+                    <li><a href="F1Ferrari.html">F1 Ferrari versenyautók</a></li>
+                    <li><a href="LuxusFerrari.html">Luxus Ferrari/sportautó</a></li>
+                    <li><a href="Osszehasonlitas.html"><span class="kiss"></span>Összehasonlítás és Vélemény</a></li>
+                </ul>
+            </nav>  
+
+        </header>
+        <main id="content">
+        <div>
+            <h1>Ferrari mint versenyautó vagy mint sportautó</h1>
+        </div>
+        <section>
+            <h2>Ferrari egyik fajtájának a bemutatás</h2>
+            <video class="videjó" controls src="Laferrarivideo.mp4" poster="videoelőkép.png">
+            </video>
+            <span class="videocim"><a href="LaFerrariOfficialvideo_leirasa.txt" target="_blank">Video hosszú leírása</a></span>
+        </section>
+        
+        
+        <h2>Kicsit a logójáról</h2>
+        <p> A <cite>Ferrari</cite> cég ábrás védjegyét az <cite>„ágaskodó ló”</cite> néven emlegetik.<br>
+        A <cite>Ferrari</cite> emblémája egy sárga címerpajzson fekete ágaskodó lovat ábrázol,<br>
+        általában egy „S” és egy „F” betű társaságában, amely a „Scuderia Ferrari” név rövidítése.<br> 
+        Az embléma tetején az olasz zászló színei: <span>zöld, fehér, piros</span> láthatóak.<br>
+        </p>
+        
+        <article>  
+        <div><h2>A Formula-1 autók</h2><br>
+            
+                <div class="row">
+                    <div class="column"><figure><a href="uj_f1.png" target="_blank"><img src="kicsi_uj_f1.png" alt="Egy Ferrari Formula-1es autót láthatunk a képen ami piros."></a><figcaption>Egy <cite>Ferrari Formula-1es</cite> autó láthatunk a képen ami piros</figcaption></figure></div>
+                    <div class="column"><p>A <strong>Formula-1</strong>-es autók bemutatásáról lesz majd szó. Ki mikor találta ki a és hogy hogyan vagy miért jött neki ez az ötlet. Majd a későbbiekben munkalehetőséget nyújt néhány versenyző léleknek.</p></div>
+                </div>
+               
+            <h2>A Ferrari sportautók</h2><br>    
+
+                <div class="row">
+                    <div class="column"><p>A mindennapi használatban lévő versenyautókról lesz szó, ami luxus körülményeket és feledhetetlen élményeket szolgál. Igaz nem mindenki tudja megengedni magának, de be kell látni, hogy itt minőségi autóról van szó.</p></div>
+                    <div class="column"><figure><a href="laferrari.jpg" target="_blank"><img src="kicsi_laferrari.png" alt="Egy La Ferrarit láthatunk a képen ami piros."></a><figcaption>Egy <cite>La Ferrarit</cite> láthatunk a képen ami piros</figcaption></figure></div>
+                </div>
+
+        </div>
+        </article>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+</main>
+
+<footer>
+    Készítette: Nemes Olivér<br>
+    <time datetime="2024-11-06">2024. november 6.</time>
+</footer>
+
+</div>
+</body>
+</html>
