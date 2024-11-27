@@ -1,0 +1,73 @@
+@page{
+    size: A4;
+}
+body{
+    margin: 10px;
+    background-color: white;
+    font: 12pt;
+    color: black;
+}
+@media print{
+    video,nav,.videocim,figcaption,button,section,summary,form{
+        display: none;
+    }
+    .row::after{
+        content: "";
+        display: grid;
+        clear: both;
+    }
+    .column{
+        width: 100%;
+    }
+    img{
+        width: 40%;
+    }
+    .content{
+        padding: auto;
+        margin: auto;
+    }
+    * ,p,h1,h2,h3,a,footer,strong,th,td{
+        color:black;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

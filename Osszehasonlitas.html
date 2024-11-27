@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initil-scale=1.0">
+    <title>Összehasonlítás és Vélemény</title>
+    <link rel="stylesheet" type="text/css" href="stílus.css">
+    <link rel="stylesheet" media="print" type="text/css" href="print.css">
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div id="tartalom">
+        
+        <header>
+            <a id="skip" href="#content">Ugrás a tartalomra</a>
+            <button onclick="Kontraszt()">Kontraszt</button>
+        <script>
+            function Kontraszt(){
+                var element = document.querySelectorAll('p');
+                for (let index = 0; index < element.length; index++) {
+                    element[index].classList.toggle("Kont");
+                }
+            }
+        </script>
+            <nav>
+                <ul class="ul2">
+                    <li><img src="Ferrari-F1-Logo-1.png" alt="Ferrari logot láthatunk"></li>
+                </ul>
+                <ul class="ul1">
+                    <li><a href="index.html">Ferrari F1 vagy sport?</a></li> 
+                    <li><a href="F1Ferrari.html">F1 Ferrari versenyautók</a></li>
+                    <li><a href="LuxusFerrari.html">Luxus Ferrari/sportautó</a></li>
+                    <li><a class="active" href="Osszehasonlitas.html"><span class="kiss"></span>Összehasonlítás és Vélemény</a></li>
+                </ul>
+            </nav> 
+        </header> 
+        <main id="content">   
+        
+            <h1>Ferrari mint versenyautó vagy mint sportautó</h1>
+            <figure><img src="összehasonlítás.png" alt="A képen egy piros Formula-1es Ferrari látható melette meg egy piros La Ferrari látható"><figcaption>A képen egy piros Formula-1es <cite>Ferrari</cite> látható melette meg egy piros és mellette egy <cite>La Ferrarit</cite> láthatunk a képen ami piros</figcaption></figure>
+        
+
+        <form action="mailto:oliverweboldalcim@gmail.com" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Az adataid</legend>
+                <label for="nev"><strong>Név</strong></label><br>
+                <input type="text" name="nev" id="nev" size="60" maxlength="50"><br>
+        
+                <label for="email"><strong>E-mail</strong></label><br>
+                <input type="email" name="email" id="email" size="60" maxlength="50"><br>
+        
+                <input type="checkbox" name="szereted" id="szereted" value="Igen">
+                <label for="szereted">Szereted a Ferrarit?</label><br>
+        
+                <label for="Kedvencmodel"><strong>Melyik a kedvenc modelled?</strong></label><br>
+                <input type="text" name="Kedvencmodel" id="Kedvencmodel" size="60" maxlength="50" placeholder="Ha van kedvenc modelled csak akkor töltsd ki?"><br>
+
+                <fieldset>
+                    <legend>Mennyire szereted a F1-et</legend>
+                    <h3>1-10 (1:nem szeretem, 10:nagyon szeretem)<br>
+                        <input type="radio" name="ertekelese" id="v1" value="1">
+                        <label for="v1">1</label>
+                        <input type="radio" name="ertekelese" id="v2" value="2">
+                        <label for="v2">2</label>
+                        <input type="radio" name="ertekelese" id="v3" value="3">
+                        <label for="v3">3</label>
+                        <input type="radio" name="ertekelese" id="v4" value="4">
+                        <label for="v4">4</label>
+                        <input type="radio" name="ertekelese" id="v5" value="5">
+                        <label for="v5">5</label>
+                        <input type="radio" name="ertekelese" id="v6" value="5">
+                        <label for="v6">6</label>
+                        <input type="radio" name="ertekelese" id="v7" value="5">
+                        <label for="v7">7</label>
+                        <input type="radio" name="ertekelese" id="v8" value="5">
+                        <label for="v8">8</label>
+                        <input type="radio" name="ertekelese" id="v9" value="5">
+                        <label for="v9">9</label>
+                        <input type="radio" name="ertekelese" id="v10" value="5">
+                        <label for="v10">10</label>
+                    </h3>
+                </fieldset>
+                <label for="F1velemeny"><strong>Kis vélemén az F1-ről</strong></label><br>
+                <textarea name="F1velemeny" id="F1velemeny" cols="60" rows="10" maxlength="1200" placeholder="Miért szereted az F1et vagy miért nem?"></textarea><br>
+                
+                <label for="szemely"><strong>Ki a kedvenc F1-es versenyződ?</strong></label><br>
+                <input type="text" name="szemely" id="szemely" size="60" maxlength="50" placeholder="Csak akkor töltsd ki ha szereted a F1-et?"><br>
+                <fieldset>
+                    <legend>Műveletek</legend>
+                    <input type="submit" value="Elküld">
+                    <input type="reset" value="Törlés">
+                </fieldset>
+            </fieldset>
+        </form>
+    
+        <aside>
+        <table>
+            <caption>
+                <strong>Autók összehasonlítása</strong>
+                <details>
+                    <summary>Súgó</summary>
+                    <p> A táblázatban a táblázatban a két fajta Ferrarit vagyis az F1-et és a sportautóknak lesz az összehasonlítása(A fajta, Használat, Ár és a Max sebességet tüntetjük fel.)</p>
+                </details>
+            </caption>
+                <tr>
+                    <th>Fajta</th>
+                    <th>F1</th>
+                    <th>Sportautó</th>
+                </tr>
+                <tr>
+                    <th>Használat</th>
+                    <td>Csakis versenypályákon, közúton tilos a használata kialakítása miatt sok helyen kárt tenne a versenyautóban.</td>
+                    <td>Közúton és versenypályán is megállja a helyét, közúton megállja a helyét, viszont érdemes kíméletesen használni, mert a javíttatása nem pénztárcabarát.</td>
+                </tr>
+                <tr>
+                    <th>Ár</th>
+                    <td>Nem lehet megvásárolni, mivel csak is a F1-ben használható.</td>
+                    <td>Az ára 25-30 milliónál kezdődik. Ezért is számít luxusautónak, mivel nem sokan tehetik meg, hogy ilyen sportautóval büszkélkedhessenek.</td>
+                </tr>
+                <tr>
+                    <th>Max sebesség</th>
+                    <td>374 km/h</td>
+                    <td>350 km/h</td>
+                </tr>
+        </table>
+    </aside>
+        
+            <div class="közösségi-logo">
+                <a href="https://www.facebook.com/Ferrari/" class="közösségi-oldal-logok" target="_blank" rel="noopener noreferrer" >
+                    <img src="facebooklogo.png" alt="Facebook" class="közösségi-logo">
+                </a>
+                <a href="https://www.instagram.com/ferrari/" class="közösségi-oldal-logok" target="_blank" rel="noopener noreferrer" >
+                    <img src="instagramlogo.png" alt="Instagram" class="sközösségi-logo">
+                </a>
+                <a href="https://www.ferrari.com/en-HU" class="közösségi-oldal-logok" target="_blank" rel="noopener noreferrer" >
+                    <img src="Ferrari-F1-Logo-1.png" alt="Ferrari oldal" class="közösségi-logo">
+                </a>
+                <a href="https://www.twitch.tv/ferrariesports" class="közösségi-oldal-logok" target="_blank" rel="noopener noreferrer" >
+                    <img src="twitch2.png" alt="Twitch" class="közösségi-logo">
+                </a>
+                <a href="https://x.com/Ferrari" class="közösségi-oldal-logok" target="_blank" rel="noopener noreferrer" >
+                    <img src="x2.png" alt="X" class="közösségi-logo">
+                </a>
+            </div>
+         
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</main>
+<footer>
+    Készítette: Nemes Olivér<br>
+    <time datetime="2024-11-06">2024. november 6.</time>
+</footer>
+
+</div>
+</body>
+</html>
